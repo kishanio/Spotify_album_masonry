@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  
+  <title>Spotify Masonary</title>
+  <meta charset="utf-8">
+
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+    
+</head>
+<body>
+    <div class="masonry">
+    </div>
+    
+    
+    <script src="js/libs/jquery.js"></script>
+    <script src="js/libs/masonry.js"></script>
+    <script>
+    // images set 
+
+    var images=function(){
+      return{
+        artwork:"http://distilleryimage10.s3.amazonaws.com/79f10162751d11e380871237daaf68f6_5.jpg http://distilleryimage4.s3.amazonaws.com/ffca82ea751d11e3b2d5124690844c2c_5.jpg http://distilleryimage0.s3.amazonaws.com/191e047e751e11e39b211278b2db33a8_5.jpg http://distilleryimage11.s3.amazonaws.com/ae008740752011e39f7512f604582c7b_5.jpg http://distilleryimage7.s3.amazonaws.com/bd45f656752311e385a6126de65e1c1f_5.jpg http://distilleryimage5.s3.amazonaws.com/35ca40a8751c11e3b7710e42bed4ef95_5.jpg http://distilleryimage10.s3.amazonaws.com/1780de2c751c11e3a97a1280cd5e4e2e_5.jpg http://distilleryimage6.s3.amazonaws.com/d18f1b86751b11e3ac080eecd92379d2_5.jpg http://distilleryimage1.s3.amazonaws.com/7b2be992751911e38b99120841cb52d9_5.jpg http://distilleryimage0.s3.amazonaws.com/30d3bf3c751911e3a90e12dc8ca6f474_5.jpg http://distilleryimage7.s3.amazonaws.com/18c209c6751911e3b3f312f42697c837_5.jpg http://distilleryimage6.s3.amazonaws.com/e7f31e5c751811e3b3af1288dea66562_5.jpg http://distilleryimage11.s3.amazonaws.com/363449b2751711e39166124a9393de5f_5.jpg http://distilleryimage6.s3.amazonaws.com/1956998a751711e3ab9a126ea4147b56_5.jpg http://distilleryimage7.s3.amazonaws.com/5bbad706751611e3a65612f68b44a1e7_5.jpg http://distilleryimage10.s3.amazonaws.com/3c649770751611e39e350ecbac9c2ada_5.jpg http://distilleryimage10.s3.amazonaws.com/0dcd70d0751611e3902e121f8c3e4216_5.jpg http://distilleryimage4.s3.amazonaws.com/ea369976751511e3a84f12dfa62606e4_5.jpg http://distilleryimage8.s3.amazonaws.com/bcd3ed62751511e392820e0f3e8c9d28_5.jpg http://distilleryimage10.s3.amazonaws.com/b056e968751511e38442126f3f0ea56e_5.jpg http://distilleryimage7.s3.amazonaws.com/5045dcb4751511e3a15c1286ca82223f_5.jpg http://distilleryimage2.s3.amazonaws.com/904e375475d611e399dc0e684c850baa_5.jpg http://distilleryimage10.s3.amazonaws.com/8ea8aff0751411e3836d12239cedb05e_5.jpg http://distilleryimage2.s3.amazonaws.com/9e36078475d611e3be9f129fc51c6e5a_5.jpg http://distilleryimage6.s3.amazonaws.com/16394674751411e39a7b0a4a45a13ef6_5.jpg http://distilleryimage7.s3.amazonaws.com/f9a6409875d611e3be410ea423508d53_5.jpg http://distilleryimage11.s3.amazonaws.com/121ab50075d711e3b08c0ea9da6dba5b_5.jpg http://distilleryimage7.s3.amazonaws.com/97ab4bf4751311e3bfad0e9233e5ae57_5.jpg http://distilleryimage7.s3.amazonaws.com/2d8c6100751211e39a5a12a62c3665ab_5.jpg http://distilleryimage2.s3.amazonaws.com/d286eea6751111e3838512aaa8e0901e_5.jpg http://distilleryimage0.s3.amazonaws.com/35b7f3e275d711e38405122f108534bc_5.jpg http://distilleryimage7.s3.amazonaws.com/504af3d075d711e3b1601202e6d85e9f_5.jpg http://distilleryimage11.s3.amazonaws.com/090fc8a075d811e393ed129ac59cc163_5.jpg http://distilleryimage11.s3.amazonaws.com/6f1eaf3a75d811e3b48f0e570692d47b_5.jpg http://distilleryimage5.s3.amazonaws.com/cd63799a75d811e39d2e1266f8797a81_5.jpg http://distilleryimage9.s3.amazonaws.com/19f8960075d911e39da90a8f5c5dae8d_5.jpg http://distilleryimage11.s3.amazonaws.com/b01aba7875d911e39eb412f2e10abb0b_5.jpg http://distilleryimage10.s3.amazonaws.com/bf4fb16a75d911e3a778129d8c452bbe_5.jpg http://distilleryimage8.s3.amazonaws.com/dafd3c5275d911e3bb1912e37358b744_5.jpg http://distilleryimage5.s3.amazonaws.com/7fdbf7d075db11e39d590ebfbae2fbbd_5.jpg http://distilleryimage4.s3.amazonaws.com/ad08146e75e011e381b00e0f86072ad0_5.jpg http://distilleryimage4.s3.amazonaws.com/bfd3afd675e011e3b8630ee1bae39be8_5.jpg http://distilleryimage3.s3.amazonaws.com/db583e8475e011e3870e0efcc5f6d7df_5.jpg http://distilleryimage7.s3.amazonaws.com/ada3b7f075e211e3b9940e44cdc87753_5.jpg http://distilleryimage3.s3.amazonaws.com/f9cf951875e211e3aba81226014e1ecb_5.jpg http://distilleryimage3.s3.amazonaws.com/fa97abec75e311e3860d0e19eeb9971f_5.jpg http://distilleryimage3.s3.amazonaws.com/5ea334e475e411e3abea12c3758099f3_5.jpg http://distilleryimage11.s3.amazonaws.com/81b5527875e411e3b5110e05aab7965f_5.jpg  http://distilleryimage7.s3.amazonaws.com/73702b34760711e3906b126db9546433_5.jpg http://distilleryimage2.s3.amazonaws.com/e10b3a98760811e3873012e3f01152c6_5.jpg http://distilleryimage5.s3.amazonaws.com/2f92384c760911e3aee71284e9aa6fe5_5.jpg http://distilleryimage3.s3.amazonaws.com/78c5f9e8761011e3ab9d123c21c1539b_5.jpg http://distilleryimage0.s3.amazonaws.com/b1451e3e761011e3858d12570dcb5688_5.jpg http://distilleryimage3.s3.amazonaws.com/815f7c48763611e38b281207276a6c3f_5.jpg http://distilleryimage3.s3.amazonaws.com/9012c18e761611e391d012f99f952f1f_5.jpg http://distilleryimage0.s3.amazonaws.com/f0d480d4757111e3ac980e54565bd984_5.jpg http://distilleryimage4.s3.amazonaws.com/f4a8af7c6d9311e3959b0e47c7b12f6c_5.jpg http://distilleryimage0.s3.amazonaws.com/4b2188886d8511e3852c0e82256d50e4_5.jpg http://distilleryimage0.s3.amazonaws.com/c3796a326a6311e3ac980e54565bd984_5.jpg http://distilleryimage0.s3.amazonaws.com/956b89c667a811e3aec5128fd569807c_5.jpg http://distilleryimage2.s3.amazonaws.com/108b2890664711e3a6791201ed47478e_5.jpg http://distilleryimage10.s3.amazonaws.com/28a9e6ee663511e39124123bd759c622_5.jpg http://distilleryimage7.s3.amazonaws.com/4bdc7b6a47c511e3ae740ea73095e8aa_5.jpg http://distilleryimage0.s3.amazonaws.com/91db3e7260a611e3956e0e4a7dae6698_5.jpg http://distilleryimage2.s3.amazonaws.com/8122f26c600d11e3ac63128cfefedca8_5.jpg".split(" ")
+      }
+    }();
+
+
+    // calling masory with arguments container, images , size respectively.
+    masonry.init('.masonry',images.artwork,50);
+    </script>
+</body>
+</html>
+
+
