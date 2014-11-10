@@ -5,7 +5,7 @@ You can find the actual reference [here](http://spotify.com/us/)
 
 ####Demo & Other resources: ####
 
-[http://kishanio.github.io/Spotify_album_masonry/](http://kishanio.github.io/Spotify_album_masonry/)
+[http://kishanio.svbtle.com/spotify-album-masonry](http://kishanio.svbtle.com/spotify-album-masonry)
 
 ####Dependency: ####
 
