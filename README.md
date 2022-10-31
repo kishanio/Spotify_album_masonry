@@ -1,18 +1,17 @@
 Spotify homepage like Image Masonry
 ===================================
 
-You can find the actual reference [here](http://spotify.com/us/)
-
-####Demo & Other resources: ####
+#### Demo & Other resources: ####
 
 [http://kishanio.svbtle.com/spotify-album-masonry](http://kishanio.svbtle.com/spotify-album-masonry)
 
-####Dependency: ####
+#### Dependency: ####
 
 
 [jQuery](http://jquery.com)
 
-####Usage:####
+#### Usage: ####
+```
     <!-- Import jquery.js & masonry.js --
     <script src="js/libs/jquery.js"></script>
     <script src="js/libs/masonry.js"></script>
@@ -30,6 +29,7 @@ You can find the actual reference [here](http://spotify.com/us/)
 		// parameters [container,images,size] respectively
 		masonry.init(".masonry",images,100);
     </script>
+```
 
 The MIT License
 ===============
